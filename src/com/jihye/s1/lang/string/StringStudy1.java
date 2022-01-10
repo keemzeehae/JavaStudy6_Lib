@@ -33,7 +33,7 @@ public class StringStudy1 {
 	public void subStringTest() {
 		String title = "West Side Story";
 //		String result = title.substring(5);
-		String result = title.substring(title.indexOf("S"));
+		String result = title.substring(title.indexOf("s"));
 		System.out.println(result);
 		result = title.substring(5,9);
 		System.out.println(result);
@@ -70,9 +70,9 @@ public class StringStudy1 {
 	public void indexofTest() {
 		String msg = "Hello World!";
 		//indexOf 호출
-		int num = msg.indexOf("o",7); 
-		//int num = msg.indexOf('W');//int ch ='W'; 문자를 인트에 넣는것 형변환
-		//int num = msg.indexOf("Wo");//int ch ='W'; 문자를 인트에 넣는것 형변환
+//		int num = msg.indexOf("o"); 
+//		int num = msg.indexOf('W');//int ch ='W'; 문자를 인트에 넣는것 형변환
+		int num = msg.indexOf("Wo");//int ch ='W'; 문자를 인트에 넣는것 형변환
 		System.out.println(num);
 	}
 	
@@ -105,7 +105,7 @@ public class StringStudy1 {
 		//char 어떤 문자열에서 한글자를 빼내오고 싶을 때
 		System.out.println(ch);
 		String name2 = new String("hello2");
-		System.out.println(name);
+		System.out.println(name2);
 		
 	}
 
