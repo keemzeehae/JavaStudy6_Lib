@@ -28,23 +28,6 @@ public class StringStudy1 {
 			System.out.println("알 수 없는 파일 형식");
 		}
 		
-		
-
-//		
-//		switch(str) {
-//		case "jpg","gif","png":
-//			System.out.println("이미지파일 입니다");
-//		break;
-//		case "txt","pdf","hwp":
-//			System.out.println("문서파일 입니다");
-//		break;
-//		case "mp3","wav","ogg":
-//			System.out.println("음원파일 입니다");
-//		break;
-//		default :
-//			System.out.println("알수 없는 파일입니다");
-//			break;
-//		}
 	}
 	
 	public void subStringTest() {

@@ -13,6 +13,7 @@ public class ObjectMain {
 		System.out.println("Car : "+car);
 		System.out.println(car.toString());
 		car.toString();
+		car.toString();
 		Object obj =car ;
 		
 		FireCar fc = new FireCar();
