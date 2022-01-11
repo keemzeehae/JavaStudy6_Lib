@@ -12,8 +12,10 @@ public class MemberMain {
 			System.out.println(members[i].getPw());
 			System.out.println(members[i].getName());
 			System.out.println(members[i].getEmail());
+			System.out.println(members[i].getAge());
 			System.out.println("=========================");
 		}
+		System.out.println("name: "+"jh"+"age: "+30);
 
 	}
 
