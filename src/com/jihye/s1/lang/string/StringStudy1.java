@@ -4,6 +4,44 @@ import java.util.Scanner;
 
 public class StringStudy1 {
 	
+	public void splitTest() { //배열 호출하는거 다시 해보기
+		String name = "woosik dami 춘식이";
+		String [] names = name.split(" ");
+		
+		for (int i=0;i<names.length;i++) {
+			System.out.println(names[i].trim());
+		}
+	}
+	public void valueTest() { 
+		int num = 1000;
+		String result = String.valueOf(num); //static
+		System.out.println(result);
+		
+	}
+	
+	public void caseTest() { 
+		String title = "West Side Story";
+		String result1 = title.toLowerCase();
+		System.out.println(title);
+		System.out.println(result1);
+		String result2 = title.toUpperCase();
+		System.out.println(title);
+		System.out.println(result2);
+		
+	}
+	
+	public void replaceTest() {
+		String title = "West Side Story";
+		//reference type,지역변수,참조변수
+		//참조변수명.멤버메서드명()
+//		String result =title.replace('S', 't');
+		String result =title.replace("West", "East");
+		
+		System.out.println(title);
+		System.out.println(result);
+		
+	}
+	
 	public void subStringEx1 () {
 		//키보드로부터 업로드할 파일명을 입력받아 
 		//예를 들어 a.txt, b.pdf 
@@ -71,6 +109,7 @@ public class StringStudy1 {
 		String msg = "Hello World!";
 		//indexOf 호출
 //		int num = msg.indexOf("o"); 
+		//num은 primitive 타입이면서 지역변수
 //		int num = msg.indexOf('W');//int ch ='W'; 문자를 인트에 넣는것 형변환
 		int num = msg.indexOf("Wo");//int ch ='W'; 문자를 인트에 넣는것 형변환
 		System.out.println(num);
