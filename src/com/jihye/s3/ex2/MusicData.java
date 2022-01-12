@@ -26,7 +26,7 @@ public class MusicData {
 		System.out.println("삭제할 노래제목 확인: "+title);
 		for (int i=0;i<ar.size();i++) {
 			System.out.println(ar.get(i).getTitle());
-			if (title==ar.get(i).getTitle()) {
+			if (ar.get(i).getTitle().equals(title)) {
 				musicDTO = ar.remove(i);
 				break;
 				
