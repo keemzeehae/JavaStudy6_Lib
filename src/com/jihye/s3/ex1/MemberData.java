@@ -19,18 +19,10 @@ public class MemberData {
 	}
 	//메서드
 	public ArrayList<MemberDTO> init() {
-	//data에 있는 문자열을 StringTokenizer로 파싱해서
-		StringTokenizer st = new StringTokenizer(data,"-");
-		ArrayList<MemberDTO> ar = new ArrayList<>();
-		while (st.hasMoreTokens()) {
-			SeasonDTO seasonDTO = new SeasonDTO();
-			String token = st.nextToken().trim();
-			seasonDTO.setName(token);
-		}
-		
+	//data에 있는 문자열을 StringTokenizer로 파싱해서	
 	//MemberDTO를 생성해서 멤버변수값으로 대입
 	//MemberDTO들을 ArrayList에 담아서 리턴
-		
+		System.out.println("Member Branch");
 		return null;
 		
 	}
