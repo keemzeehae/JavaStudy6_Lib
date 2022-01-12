@@ -4,6 +4,34 @@ import java.util.ArrayList;
 
 public class ListStudy {
 	
+	private final int NUM=1; //변수도 상수로 쓸 수 있음
+	public void Study3() {
+		
+		//generic
+		//ArrayList<E> 변수명 = new ArrayList<E>();
+		//E=Integer / 뒤에 Integer는 앞에랑 똑같으니까 생략가능
+		ArrayList<String> ar2 = new ArrayList<>();
+		ar2.add("");
+		//add(E e)
+		ArrayList<Integer> ar = new ArrayList<>();
+		ar.add(1);
+		ar.add(2);
+//		ar.add('b');
+//		ar.add(3.12);
+//		ar.add("iy");
+		
+		for(int i =0;i<ar.size();i++) {
+			System.out.println(ar.get(i));
+		}
+		
+		Object obj =1;
+		int n = (Integer)obj;
+		
+		int num = ar.get(0);
+//		String name = (String)ar.get(3);
+		
+	}
+	
 	public void Study2() {
 		ArrayList ar = new ArrayList();
 		int num =1;

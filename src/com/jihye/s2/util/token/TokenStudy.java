@@ -1,5 +1,6 @@
 package com.jihye.s2.util.token;
 
+import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 public class TokenStudy {
@@ -10,6 +11,7 @@ public class TokenStudy {
 		String [] s = str.split(",");
 		StringTokenizer st = new StringTokenizer(str,",");
 		//hasmoretokens 뜻: 자를 토큰이 더 있나요? 다음 쉼표가 있는지 있으면 true를 얘기해 없으면 false를 얘기하고 종료
+		ArrayList<SeasonDTO> ar =new ArrayList<>();
 		
 		while(st.hasMoreTokens()) {
 			SeasonDTO seasonDTO = new SeasonDTO();
@@ -18,10 +20,15 @@ public class TokenStudy {
 			
 			token = st.nextToken();//16
 			seasonDTO.setC(Integer.parseInt(token.trim()));
+			ar.add(seasonDTO);
 			System.out.println(seasonDTO.getName());
 			System.out.println(seasonDTO.getC());
 		}
-		
+		for(int i = 0;i<ar.size();i++) {
+			SeasonDTO seasonDTO = ar.get(i);
+			System.out.println(seasonDTO.getName());
+			System.out.println(ar.get(i).getC());
+		}
 
 	}
 }
