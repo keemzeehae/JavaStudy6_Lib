@@ -1,11 +1,27 @@
 package com.jihye.s2.util.collection;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class ListStudy {
 	
 	private final int NUM=1; //변수도 상수로 쓸 수 있음
-	public void Study3() {
+	
+	public List<String> study5() {
+		ArrayList<String> list =new ArrayList<>();
+		list.add("1");
+		return list;
+		
+	}
+	public void study4() {
+		LinkedList<Integer> list = new LinkedList<>();
+		list.add(1);
+		list.add(2);
+		
+		System.out.println(list.get(0));
+	}
+	public void study3() {
 		
 		//generic
 		//ArrayList<E> 변수명 = new ArrayList<E>();
@@ -32,7 +48,7 @@ public class ListStudy {
 		
 	}
 	
-	public void Study2() {
+	public void study2() {
 		ArrayList ar = new ArrayList();
 		int num =1;
 		Integer n = num; //autoBoxing
@@ -49,7 +65,7 @@ public class ListStudy {
 	}
 	
 	//메서드 생성
-	public void Study1() {
+	public void study1() {
 		//배열타입으로 객체생성
 		int [] numbers = new int[2];
 		ArrayList ar = new ArrayList();//기본 10칸, 알아서 칸이 늘어남

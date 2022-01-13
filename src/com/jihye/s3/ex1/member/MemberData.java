@@ -1,4 +1,4 @@
-package com.jihye.s3.ex1;
+package com.jihye.s3.ex1.member;
 
 import java.util.ArrayList;
 import java.util.Scanner;
