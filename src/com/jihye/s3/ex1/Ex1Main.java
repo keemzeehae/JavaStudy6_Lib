@@ -2,9 +2,13 @@ package com.jihye.s3.ex1;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 import com.jihye.s3.ex1.member.MemberDTO;
 import com.jihye.s3.ex1.member.MemberData;
+import com.jihye.s3.ex1.student.StudentDTO;
 import com.jihye.s3.ex1.student.StudentData;
 
 public class Ex1Main {
@@ -15,8 +19,23 @@ public class Ex1Main {
 		
 		//회원들의 정보 모아놓음 
 		ArrayList<MemberDTO> ar= memberData.init();
-		studentData.addStudent(ar);
+		Map<String, StudentDTO> map =studentData.addStudent(ar);
+		Set<String> keys = map.keySet();
+		Iterator<String> k = keys.iterator();
 		
+		while(k.hasNext()) {
+			String key = k.next();
+			StudentDTO studentDTO = map.get(key);
+			System.out.println("Key: "+key);
+			System.out.println(studentDTO.getId());
+			System.out.println(studentDTO.getName());
+			System.out.println(studentDTO.getKor());
+			System.out.println(studentDTO.getEng());
+			System.out.println(studentDTO.getMath());
+			System.out.println(studentDTO.getTotal());
+			System.out.println(studentDTO.getAvg());
+		}
+		System.out.println(map);
 
 	}
 
