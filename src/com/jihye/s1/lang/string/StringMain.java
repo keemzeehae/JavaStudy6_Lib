@@ -12,8 +12,9 @@ public class StringMain {
 //		ss.subStringEx1();
 //		ss.replaceTest();
 //		ss.caseTest();
-//		ss.valueTest();
-		ss.splitTest();
+		ss.valueTest();
+		ss.splitStudy2();
+//		ss.splitTest();
 	}
 
 }

@@ -12,10 +12,24 @@ public class StringStudy1 {
 			System.out.println(names[i].trim());
 		}
 	}
+	public void splitStudy2() {
+		String sun = "어제는 workshopd에 다녀왔다.";
+		String [] sunny = sun.split(" ");
+		
+		for (int i=0; i<sunny.length;i++) {
+			System.out.println(sunny[i].trim());
+		}
+	}
+	
 	public void valueTest() { 
-		int num = 1000;
+		int num = 123;
 		String result = String.valueOf(num); //static
 		System.out.println(result);
+		
+		String test = "0123";
+		Integer result2 = Integer.valueOf(test);
+		System.out.println(test);
+		System.out.println(result2);
 		
 	}
 	
