@@ -8,7 +8,7 @@ public class MemberMain {
 		// test하고 싶을때 프로그램을 실행하는 역할 main method
 		MemberData memberData = new MemberData();
 		ArrayList<MemberDTO> members = memberData.init();
-		
+//		memberData.addMember(members);
 	    MemberDTO memberDTO = memberData.removeMember(members);
 		if (memberDTO != null) {
 			System.out.println("삭제성공!");
